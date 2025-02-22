@@ -1,0 +1,17 @@
+<div style="padding: 20px;">
+    <h1 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Gestión de Tareas</h1>
+    <div style="display: flex; margin-bottom: 20px;">
+      <mat-form-field style="flex-grow: 1;">
+        <input matInput placeholder="Nueva tarea" [(ngModel)]="nuevaTarea">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="agregarTarea()" style="margin-left: 10px;">Agregar</button>
+    </div>
+    <mat-list>
+      <mat-list-item *ngFor="let tarea of tareas()">
+        <span style="flex-grow: 1;">{{ tarea }}</span>
+        <button mat-icon-button color="warn" (click)="eliminarTarea(tarea)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </div>

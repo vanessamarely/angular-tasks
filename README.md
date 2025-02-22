@@ -1,59 +1,41 @@
-# GestionTareas
+# Task Management with Angular 19 and Angular Material
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This project is a task management application built with Angular 19 and Angular Material.
 
-## Development server
+## Features
 
-To start a local development server, run:
+* **Create tasks:** Users can create new tasks by entering the task name and clicking the "Add" button.
+* **Delete tasks:** Users can delete existing tasks by clicking the delete icon next to the task.
 
-```bash
-ng serve
-```
+## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Angular 19:** A web development framework for building single-page applications.
+* **Angular Material:** A UI component library for Angular.
+* **Standalone Components:** A feature of Angular 19 that allows creating components without modules.
+* **Signals:** A new way to manage state in Angular 19.
+* **Routing:** To navigate between different views of the application.
 
-## Code scaffolding
+## How to Run the Project
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1.  **Install dependencies:**
 
-```bash
-ng generate component component-name
-```
+    ```bash
+    npm install
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2.  **Run the application:**
 
-```bash
-ng generate --help
-```
+    ```bash
+    ng serve -o
+    ```
 
-## Building
+3.  **Open the application in your browser:**
 
-To build the project run:
+    * Navigate to `http://localhost:4200/tareas`.
 
-```bash
-ng build
-```
+## Project Structure
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* `src/app/tareas/tareas.component.ts`: Contains the logic and UI of the tasks component.
+* `src/app/app.routes.ts`: Contains the application's route configuration.
+* `src/main.ts`: The application's entry point.
+* `src/app/app.component.html`: The application's main component.
